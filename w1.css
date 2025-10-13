@@ -1,3 +1,29 @@
-body{
+/* body selector - body is global settings for the page */
+body
+{
+    background-color: rgb(84, 46, 19);
+    color:rgb(207, 234, 230);
+    text-align: center;
     
 }
+
+h2
+{
+    color: rgb(223, 170, 208);
+}
+
+footer {
+  /* Background color of the footer */
+  /* change black to a different color */
+  background-color: rgb(84, 46, 19);
+  text-align: center;
+  padding: 20px;
+  /* Text color of the text in the footer */
+  /* change white to a different color */
+  color:rgb(207, 234, 230);
+  font-size: 0.9em;
+  border-top: 1px solid rgb(223, 170, 208);;
+}
+/********  
+     Start Footer Styles 
+********/
