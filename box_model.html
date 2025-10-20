@@ -1,0 +1,76 @@
+<!-- DOCTYPE html -->
+ <html lan="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model Example</title>
+
+    <!-- Embedde styles: TODO: move to external css file -->
+     <style>
+        /* This is a custom claqss that will just add a boarder around the outer div */
+        .outerEdge
+        {
+            border: 5px solid burlywood;
+        }
+        /* 2 types of elements
+            block- take up entire row/page
+            inline- items fill in next to each other across the row/page
+            div is a block element */
+
+        /* these styles apply to the inner div so we can see how the box model works */
+        .box
+        {
+            width: 200px;
+            height: 100px;
+
+            /* padding- space around the context */
+            /* padding 20px is symmetrical  with the additional paddings, the og padding is ignored*/
+            padding: 20px; 
+
+            padding-top: 100px;
+            padding-right: 30px;
+            padding-bottom: 40px;
+            padding-left: 80px;
+            /* OR setting the padding from top, right, bottom, left*/
+            padding: 100px 30px 40px 80px;
+
+            /* border for inner div */
+            border: 5px solid green;
+
+            /* margin is the space outside of the border */
+            /* margin 20px evenly adds 20px to each side */
+            margin: 20px;
+
+            margin-top: 70px;
+            margin-right: 30px;
+            margin-bottom: 50px;
+            margin-left: 100px;
+            /* OR setting the margin from top, right, bottom, left*/
+            margin: 70px 30px 50px 100px;
+        }
+     </style>
+</head>
+<body>
+    <!-- all of the text, images, to show to the user should be in the body -->
+    
+    <!-- header is where logo, menu, and page title is found -->
+    <header>
+        <!-- h1 is the top level heading, put page title here -->
+        <h1>Box Model Example</h1>
+    </header>
+
+    <main>
+        <!-- this outer div will have an order to see the spacing of the inner div -->
+        <div class="outerEdge">
+            <!-- this inner div will show the spacing of the box model -->
+            <div class="box">this is my inner div content</div>
+        </div>
+
+        <ul>
+            <li>Content: the innermost area of the HTML element where the text and/or images appear</li>
+            <li>Padding: the space bewteen the content and the border</li>
+            <li>Border: the edge around the padding and the content</li>
+            <li>Margin: the outermost space of th element that separates the element from other elements</li>
+        </ul>
+    </main>
+</body>
