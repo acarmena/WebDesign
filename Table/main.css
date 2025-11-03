@@ -1,3 +1,40 @@
+body{
+    background-color: lightgray;
+    color: rgb(15, 15, 103);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
 h1{
     color:rgb(104, 113, 131);
 }
+
+table{
+    width: 80%;
+    /* prevents borders from stacking if there are  multiple */
+    border-collapse: collapse;
+    margin: 20px;
+}
+
+th{
+    text-align: left;
+    color: rgb(27, 92, 27);
+    background-color: whitesmoke;
+}
+
+/* these styles will apply to both the heading and the data */
+th, td{
+    padding: 10px;
+    border: 1px solid navy;
+}
+
+/* assign different bg color to the even rows */
+tr:nth-child(even){
+    background-color: rgb(170, 236, 236);
+}
+
+tr:hover{
+    background-color: whitesmoke;
+}
+
