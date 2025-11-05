@@ -1,0 +1,71 @@
+body {
+    background-color: bisque;
+    color: rgb(79, 39, 26);
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    text-align: center;
+}
+
+main {
+    align-items: center;
+    text-align: center;
+    margin: auto;
+}
+
+/* the custom class which serves as the parent for the slides */
+.slideshow {
+    max-width: 500px;
+    /* child elements will behave properly */
+    position: relative;
+    margin: auto;
+}
+
+/* custom class that serves to style the slides */
+.slide {
+    /* this allows our slides to overlap. we need to this to make the slideshow work */
+    position: absolute;
+    width: 100%;
+    /* this will initally hide the slides so we can unhide this as needed */
+    opacity: 0;
+    /* this will give us a smooth fading in and out*/
+    transition: opacity Is ease-in-out;
+}
+
+/* these styles will only apply to images located in the slide class */
+.slide img {
+    width: 100%;
+    border-radius: 10px;
+
+}
+
+/* define how we want the fade behavior to work */
+@keyframes fade {
+
+    0%,
+    33.33% {
+        /* change to 1 to see image */
+        opacity: 1;
+    }
+
+    40%,
+    100% {
+        /* back to 0 to hide image again */
+        opacity: 0;
+    }
+}
+
+/* assign the fade to each of our slides */
+.slide:nth-child(1) {
+    animation: fade 15s infinite 0s;
+}
+
+.slide:nth-child(2) {
+    animation: fade 15s infinite 5s;
+}
+
+.slide:nth-child(3) {
+    animation: fade 15s infinite 10s;
+}
