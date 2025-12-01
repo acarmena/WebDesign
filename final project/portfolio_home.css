@@ -1,0 +1,13 @@
+
+        /* these hero styles should go in a CSS file specific to this page */
+        .hero{
+            background: url('./images/beach1.jpg') center/cover no-repeat;
+            height: 90vh;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .hero-content{
+            color: navy;
+            margin: 30px;
+        }
